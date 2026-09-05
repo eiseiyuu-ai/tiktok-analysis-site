@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー - yuuportrait-analysis</title>
+<style>
+  body { font-family: sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; line-height: 1.7; color: #222; }
+  h1 { font-size: 1.3rem; }
+  h2 { font-size: 1.05rem; margin-top: 1.6rem; }
+</style>
+</head>
+<body>
+  <h1>プライバシーポリシー</h1>
+  <p>最終更新日: 2026年9月</p>
+
+  <h2>1. 本ツールの性質</h2>
+  <p>
+    yuuportrait-analysisは、開発者本人が所有するTikTok/Instagramアカウント(@yuuportrait)専用の
+    個人利用ソフトウェアです。開発者本人以外のアカウントに接続したり、他者のデータを取得することはありません。
+  </p>
+
+  <h2>2. 取得するデータ</h2>
+  <p>
+    TikTok Display API(video.listスコープ)およびInstagram API with Instagram Login
+    (instagram_business_basic, instagram_business_manage_insightsスコープ)を通じて、
+    開発者自身が投稿した動画の以下の情報のみを取得します。
+  </p>
+  <ul>
+    <li>動画ID・URL・投稿日時・説明文・尺</li>
+    <li>再生数・いいね数・コメント数・シェア数・保存数</li>
+    <li>Instagramの場合: リーチ・総インタラクション・平均視聴時間・スキップ率等のInsightsメトリック</li>
+  </ul>
+
+  <h2>3. データの保存方法</h2>
+  <p>
+    取得したデータは、開発者個人が管理するローカル環境のSQLiteデータベースファイルにのみ保存されます。
+    クラウドサーバーへの送信、第三者への提供、外部への公開は一切行いません。
+  </p>
+
+  <h2>4. データの利用目的</h2>
+  <p>開発者自身の投稿パフォーマンスを分析する目的以外にデータを利用しません。広告・マーケティング目的での第三者提供は行いません。</p>
+
+  <h2>5. データの削除</h2>
+  <p>開発者はいつでもローカルのデータベースファイルを削除することで、保存された全データを消去できます。</p>
+
+  <h2>6. アクセストークンの管理</h2>
+  <p>
+    APIアクセストークンは開発者のローカル環境の環境変数ファイル(.env)にのみ保存され、
+    ソースコードやリポジトリには含まれません。
+  </p>
+
+  <h2>7. お問い合わせ</h2>
+  <p>本ツールに関するお問い合わせは開発者本人まで直接ご連絡ください。</p>
+
+  <p><a href="./index.html">トップに戻る</a></p>
+</body>
+</html>
