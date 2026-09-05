@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authorization complete</title>
+</head>
+<body style="font-family: sans-serif; max-width: 640px; margin: 60px auto; padding: 0 16px;">
+  <h1>認可が完了しました</h1>
+  <p>このページのURL欄に表示されている <code>code=</code> の後ろの値をコピーして、
+     ターミナルに戻って作業を続けてください。</p>
+  <p id="code-display" style="word-break: break-all; background:#f4f4f4; padding: 12px; border-radius: 6px;"></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    document.getElementById("code-display").textContent = code
+      ? ("code = " + code)
+      : "code パラメータが見つかりません。URL全体を確認してください。";
+  </script>
+</body>
+</html>
